@@ -1,0 +1,10 @@
+[
+  {
+    "id":"001",
+    "titulo":"Titulo Noticia",
+    "fecha":"30/07/2021",
+    "contenido":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor urna auctor finibus tempor. Nulla nec maximus arcu, vel rutrum ante. Cras faucibus quam at semper maximus. Vivamus pretium elit sit amet ultrices varius. Nulla fringilla pretium elit volutpat vehicula. Maecenas dapibus magna fermentum turpis vulputate interdum. Fusce vestibulum efficitur massa, non ornare metus facilisis a. Praesent ex odio, tincidunt ac ante id, porta imperdiet dui. Sed vitae ex purus. Suspendisse maximus nisi non orci rhoncus, non vestibulum odio aliquam. Vivamus dignissim dui ac nunc finibus, eget feugiat est vulputate. Cras fermentum, turpis id finibus commodo, est odio imperdiet lacus, luctus viverra purus turpis eu nisi. Morbi tristique ligula orci, sed auctor elit bibendum quis. Duis volutpat turpis blandit, ultrices urna id, gravida nisl. In tempus, neque quis accumsan semper, velit augue egestas nisi, vel congue libero elit a neque. Donec id vulputate ligula. Duis libero massa, faucibus ut nisi non, pharetra eleifend erat. Mauris vitae elit vehicula, sagittis magna in, pharetra libero. Nullam quam est, interdum id aliquet vel, aliquam eget nisi. Cras porta urna velit, in vehicula sem eleifend mattis. Mauris egestas id urna eget aliquet. Pellentesque quam massa, molestie nec lacinia et, vestibulum nec lorem. Aliquam vel lectus vitae quam interdum aliquet. Aliquam faucibus condimentum nibh, ac ornare libero. Sed lorem lacus, molestie vel tortor a, porta accumsan leo. Donec odio ante, egestas id mi vel, ultrices iaculis enim. Quisque quis luctus elit, porttitor ornare tellus. Donec id neque non metus ultricies posuere.",
+    "autor": "autor de la noticia",
+    "image":"/img/foto1.jpg"
+  }
+]
