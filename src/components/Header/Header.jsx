@@ -11,7 +11,7 @@ function Header(){
             <nav>
                
             </nav>
-            <img src="/img/ilap-logo.png" alt="logo"></img>
+            <img src="img/ilap-logo.png" alt="logo"></img>
             <h1>Instituto Latinoamericano de Actualización Profesional</h1>
             <p><span>Excelencia</span> en enseñanza y aprendizaje</p>
             <Button variant="primary" size="lg">Ven con nosotros</Button>
