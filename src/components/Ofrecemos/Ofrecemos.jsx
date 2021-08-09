@@ -12,13 +12,13 @@ function Ofrecemos(){
                 <FaRegClone className="pluma"/>
                 <h3>Cursos</h3>
                 <p>Ofrecemos el diseño, la coordinación y la ejecución de cursos, conferencias y programas de adiestramiento</p>
-                <Button variant="primary"  href="#cursos" size="lg" className="botonCard">+ info</Button>
+                <Button variant="outline-primary" href="#cursos" size="lg" className="botonCard">+ info</Button>
             </article>
             <article className="card">
                 <FaFeatherAlt className="pluma"/>
                 <h3>Diplomados</h3>
                 <p>Nuestros diplomados avalados por la Universidad Central de Venezuela (UCV) se certifican mediante evaluacion continua</p>
-                <Button variant="primary" href="#diplomado" size="lg" className="botonCard">+ info</Button>
+                <Button variant="outline-primary" href="#diplomado" size="lg" className="botonCard">+ info</Button>
             </article>
         </div>
     </section>

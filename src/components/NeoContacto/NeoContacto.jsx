@@ -5,7 +5,7 @@ import React from "react";
 function NeoContacto(){
     return(
         <section className="pago" id="form-p">
-                <div className="contenedorp">
+                <div className="contenedorC">
         
                     <form action="" className="form">
                         <div className="container-genp">
@@ -19,7 +19,7 @@ function NeoContacto(){
                                 
                             <label htmlFor="">Pais</label>
                                 <select name="pais" id="" className="input pais">
-                                    <option value="">Pais</option>
+                                    
                                     <option value="+58" className="ven">Venezuela</option>
                                     <option value="+57">Colombia</option>
                                     <option value="+1">Panamá</option>

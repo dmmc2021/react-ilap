@@ -35,14 +35,14 @@ function Pago(){
                                 <label className="diplomadop" for="diplomado">Seleccion de Diplomado</label>
                                 
                                 <select  className="inputp" id="diplomado">
-                                    <label for=""><option value="">Certificacion en gestion de credito</option></label>
-                                    <label for=""><option value="">Finanzas cuantitativas</option></label>
-                                    <label for=""><option value="">Gerencia bancaria</option></label>
-                                    <label for=""><option value="">Gerencia integral de credito</option></label>
-                                    <label for=""><option value="">Gestion del presupuesto publico</option></label>
-                                    <label for=""><option value="">Gestion integral del talento humano</option></label>
-                                    <label for=""><option value="">Gestion de riesgo en instituciones financieras</option></label>
-                                    <label for=""><option value="">Instituciones financieras</option></label>
+                                    <option value="">Certificacion en gestion de credito</option>
+                                    <option value="">Finanzas cuantitativas</option>
+                                    <option value="">Gerencia bancaria</option>
+                                    <option value="">Gerencia integral de credito</option>
+                                    <option value="">Gestion del presupuesto publico</option>
+                                    <option value="">Gestion integral del talento humano</option>
+                                    <option value="">Gestion de riesgo en instituciones financieras</option>
+                                    <option value="">Instituciones financieras</option>
                                 </select>
                                 
                             </div>

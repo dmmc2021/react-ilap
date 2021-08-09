@@ -62,7 +62,7 @@ const CrearNoticia = () => {
         <div style={{ paddingLeft: "30px", paddingRight: "30px" }}>
           <Form>
             <Form.Group className='mb-3' controlId='formGroupFecha'>
-              <Form.Label style={{ color: "#000000" }}>Fecha</Form.Label>
+              <Form.Label style={{ color: "#000000" }}>Fecha  </Form.Label>
               <Form.Control type='text' readOnly defaultValue={fecha} ref={fechaRef} />
             </Form.Group>
             <Form.Group className='mb-3' controlId='formGroupTitulo'>
@@ -87,7 +87,7 @@ const CrearNoticia = () => {
               />
             </Form.Group>
           </Form>
-          <Button variant='primary' onClick={() => handlerClick()}>
+          <Button className="mb-3" variant='primary' onClick={() => handlerClick()}>
             Crear Noticia
           </Button>
         </div>

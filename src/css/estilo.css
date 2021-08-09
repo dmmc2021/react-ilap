@@ -12,6 +12,20 @@ html{
     /*scroll-behavior: smooth;*/
 }
 
+.anclas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.anclas > li{
+    list-style: none;
+    text-decoration: none;
+}
+
+nav{
+    margin-top: 0;
+}
+
 .hero{
     background-image: linear-gradient(to top, rgba(59, 66, 196, 0.623) 0%, rgba(169, 129, 187, 0.466) 49%, #a09690 100%), url("../assets/images/fondo_prin.jpg");
     width: 100%;
@@ -25,9 +39,9 @@ html{
 }
 
 .textos-hero h1{
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
-    color: #1c0f92;
+    color: #223a8a;
     margin-bottom: 50px;
 }
 
@@ -121,17 +135,23 @@ html{
 }
 
 .parrafo{
-    text-align: justify;
+    text-align: left;
     margin-bottom: 20px;
 }
 
 .cta{
     display: inline-block;
     text-decoration: none;
-    background-image: linear-gradient(to top, #7458b6 0%, #e2a266 100%);
+    background: #f38115;
     padding: 12px 15px;
     border-radius: 8px;
     color: white;
+}
+
+.titulo{
+    font-weight: bold;
+    padding-bottom: 50px;
+    padding-top: 10px;
 }
 
 
@@ -149,8 +169,21 @@ html{
 .cursos{
     background: #1c0f92;
     width: 50%;
-    
 }
+
+.catalogo{
+    background: #b3b1be;
+    width: 70%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.titl-area{
+    text-align: center;
+}
+
 
 nav{
     width: 100%;
@@ -242,9 +275,16 @@ nav{
 
 .content-cards{
     display: flex;
-    width: 100%;
+    width:100%;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    
+}
+
+.cards.contenedor {
+    background-color: #e7d6c7;
+    margin-bottom: 60px;
+    border-radius: 30px;
 }
  
 .card{
@@ -292,29 +332,33 @@ nav{
     margin-left: auto;
     margin-right: auto;
     bottom: 10px;
+    background: #92340f;
 }
 
 .pluma{
     font-size: 35px;
-    color: #7458b6;
+    color: rgb(16, 69, 102);
     margin: 20px auto;
 }
 /* CATALOGO DE CURSOS*/
 
 .contenedor-cursos > h3{
-    color: #dbc6b1;
+    color: #ecac6c;
     padding-top: 30px;
     padding-bottom: 30px;
+    text-align: center;
 }
 
 .diplo > h3{
-    color: #dbc6b1;
+    color: #ecac6c;
     padding-top: 30px;
     padding-bottom: 30px;
+    text-align: center;
 }
 
 .contenedor-cursos{
     margin-bottom: 50px;
+    
 }
 
 /*GALERIA*/
@@ -343,7 +387,37 @@ nav{
 
  /*VITRINA DE LA NOTICIA*/
 
+ .vitrina{
+     background: #dcdee0;
+     width: 75%;
+     margin-left: auto;
+     margin-right: auto;
+     border-radius: 30px;
+ }
 
+ .caja-not{
+     display: flex;
+
+ }
+ .img-not{
+     max-width: 500px;
+     max-height: 500px;
+     padding: 85px 30px 30px 30px;
+     margin-right: 30px;
+ }
+
+ .title-not{
+     padding-left: 30px;
+     padding-top: 30px;
+ }
+
+ .body-not{
+     padding-left: 30px;
+ }
+
+ .fmt-fecha{
+     padding-left: 30px;
+ }
 
 /*INFO 2*/
 
@@ -380,7 +454,9 @@ nav{
 
  .pago{
      width: 100%;
+     
     }
+
 
  .container-genp{
     width: 800px;
@@ -388,12 +464,13 @@ nav{
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
-    background-color: #679ae7;
+    background-color: #c6cfdb;
     border-radius: 20px;
     margin-top: 70px;
     margin-left: auto;
     margin-right: auto;
-}
+    border: 1px solid  rgb(102, 96, 96);
+} 
 
 .container-1p,
 .container-2p,
@@ -439,9 +516,9 @@ nav{
 .inputp{
     background: transparent;
     border: 0;
-    color: white;
+    color:  rgb(102, 96, 96);
     outline: none;
-    border: 1px solid white;
+    border: 1px solid  rgb(102, 96, 96);
     padding: 20px 10px;
     border-radius: 8px;
     cursor: pointer;
@@ -458,6 +535,7 @@ nav{
 
 .btn-cont{
     margin-top: 40px;
+    background-color: #5f7bd6;
 }
 
 .mont{
@@ -465,7 +543,7 @@ nav{
 }
 
 select > option{
-    color: white;
+    color:  rgb(102, 96, 96);
 }
 
 
@@ -481,11 +559,11 @@ select > option{
 
 .nombrep::placeholder,
 .emailp::placeholder{
-    color: white;
+    color:  rgb(102, 96, 96);
 }
 
 label{
-    color: white;
+    color:  rgb(102, 96, 96);
     display: block;
 }
 
@@ -499,7 +577,7 @@ label{
 }
 
 .titulop{
-    color: white;
+    color:  rgb(102, 96, 96);
     text-align: center;
     padding-top: 20px;
 }
@@ -606,6 +684,8 @@ input[type="submit"]:hover{
      margin-left: 15px;
  }
 
+
+
  .ven{
     text-decoration: underline;
  }
@@ -618,9 +698,9 @@ input[type="submit"]:hover{
  .input{
      background: transparent;
      border: 0;
-     color: white;
+     color: rgb(102, 96, 96);
      outline: none;
-     border: 1px solid white;
+     border: 1px solid rgb(102, 96, 96);
      padding: 20px 10px;
      border-radius: 8px;
  }
@@ -644,7 +724,7 @@ input[type="submit"]:hover{
  }
 
  .input::placeholder{
-     color: white;
+     color:  rgb(102, 96, 96);
      font-family: "raleway", "sans-serif";
  }
 
@@ -762,11 +842,12 @@ select > option{
 .caja-login{
     width: 800px;
     height: 400px;
-    margin-top: 50px;
+    margin-top: 200px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-    background: rgb(214, 212, 212);
+    background: rgb(214, 212, 212); 
+    border: 1px solid  rgb(102, 96, 96);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -794,7 +875,8 @@ select > option{
     margin-top: 100px;
     margin-bottom: 100px;
     border-radius: 30px;
-}
+    border:1px solid rgb(102, 96, 96);
+} 
 
 .actz-cur h2{
     color: rgb(223, 166, 92);
@@ -810,7 +892,11 @@ select > option{
 .cur-dip{
     display: flex;
     justify-content: space-around;
-    background: #679ae7;
+    background: #dcdee0;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
 }
 
 .btn-actz{
@@ -825,12 +911,13 @@ select > option{
     margin-right: auto;
     border-radius: 25px;
     margin-bottom: 50px;
+    border: 1px solid  rgb(102, 96, 96);
 }
 
 
 /*RESPONSIVE*/
 
-@media screen and (max-width:800px){
+@media screen and (max-width:600px){
     .textos-hero{
         text-align: center;
         font-size: 30px;
@@ -901,74 +988,96 @@ select > option{
     }
 
     /*Catalogo*/
-
-    nav{
-        width: 100%;
-    }
+    /*vitrina noticia*/
     
-    .list{
-        width: 100%;
+    .vitrina{
+        background: #dcdee0;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 30px;
+    }
+   
+    .caja-not{
         display: flex;
-        justify-content: center;
         flex-direction: column;
+   
     }
-    
-    .list_item{
-        list-style-type: none;
-        width: 100%;
-        text-align: center;
-        overflow: hidden;
+    .img-not{
+        max-width: 300px;
+        max-height: 500px;
+        padding: 30px 30px 30px 10px;
+        
     }
-    
-    .list_item--click{
-        cursor: pointer;
+   
+    .title-not{
+        padding-left: 30px;
+        padding-top: 30px;
     }
-    
-    .list_button{
-        display: flex;
-        align-items: center;
-        gap: 1em;
-        width: 70%;
-        margin: 0 auto;
+   
+    .body-not{
+        padding-left: 30px;
     }
-    
-    .arrow .list_arrow{
-        transform: rotate(90deg);
+   
+    .fmt-fecha{
+        padding-left: 30px;
     }
-    
-    .list_arrow{
-        margin-left: auto;
-        transition: transform .3s;
-    }
-    
-    .nav_link{
-        color: white;
-        display: block;
-        padding: 10px 0;
-        text-decoration: none;
-    }
-    
-    .nav_link--inside:hover{
-        background: #8a6ecc;
-    }
-    
-    .list_show{
-        width: 80%;
-        margin-left: auto;
-        border-left: 2px solid #e2a266;
-        list-style: none;
-        transition: height .4s;
-        height: 0;
-    }
-    
-    .nav_link--inside{
-        border-radius: 6px;
-        padding-left: 20px;
-        text-align: left;
-    }
+    /*formulario de contacto*/
+ .container-genp{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: #c6cfdb;
+    border-radius: 20px;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid  rgb(102, 96, 96);
+} 
 
-    /*formulario de pago*/
+.container-1p,
+.container-2p,
+.container-3p{
+    padding: 20px 20px 0 20px;
+}
+
+.container-1p{
+    display: flex;
+    margin-bottom: 0;
+}
+
+.container-2p{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.container-3p{
+    display: flex;
+    justify-content: center;
+}
+
+.container-4p{
+    display: flex;
+    margin-top: 40px;
     
+}
+
+.b1{
+    width: 100%;
+}
+
+   .cur-dip{
+    display: flex;
+    flex-direction: column;
+    background: #dcdee0;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+} 
    
     #form-p{
         display: none;
@@ -1022,9 +1131,9 @@ select > option{
    .inputp{
        background: transparent;
        border: 0;
-       color: white;
+       color:  rgb(102, 96, 96);
        outline: none;
-       border: 1px solid white;
+       border: 1px solid  rgb(102, 96, 96);
        padding: 20px 10px;
        border-radius: 8px;
        cursor: pointer;
@@ -1152,6 +1261,49 @@ select > option{
 
     .tel{
         width: 50%;
+    }
+    /*caja-Login*/
+    
+    
+    .caja-login{
+        width: 100%;
+        height: 400px;
+        margin-top: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        background: rgb(214, 212, 212); 
+        border: 1px solid  rgb(102, 96, 96);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .login-input{
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .actz-cur{
+        background: #ecdaca;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        border-radius: 30px;
+        border:1px solid rgb(102, 96, 96);
+    } 
+
+    .contenedorN{
+        background: #ecdaca;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 25px;
+        margin-bottom: 50px;
+        border: 1px solid  rgb(102, 96, 96);
     }
     
 }
