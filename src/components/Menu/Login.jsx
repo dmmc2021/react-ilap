@@ -14,7 +14,7 @@ const Login=()=>{
             auth.createUserWithEmailAndPassword(email, pass)
             alert("usuario registrado")
         }catch (e){
-            console.log(e)
+            console.log(e,msgerror)
         }
 
     }

@@ -2,7 +2,6 @@ import { useRef } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import store from "../../firebase/firebase.js";
-import Noticia from "../Noticia/Noticia.jsx";
 
 
 
@@ -17,15 +16,15 @@ const CrearNoticia = () => {
 
   const handlerClick = () => {
 
-    const publicacion =
-      {
+    // const publicacion =
+    //   {
        
-        titulo: tituloRef.current.value,
-        fecha: fechaRef.current.defaultValue,
-        contenido: contenidoRef.current.value,
-        autor: autorRef.current.value,
-        image: imagenRef.current.value,
-      }
+    //     titulo: tituloRef.current.value,
+    //     fecha: fechaRef.current.defaultValue,
+    //     contenido: contenidoRef.current.value,
+    //     autor: autorRef.current.value,
+    //     image: imagenRef.current.value,
+    //   }
       
       
       

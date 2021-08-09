@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import store from "../../firebase/firebase.js";
+// import store from "../../firebase/firebase.js";
 
 
 
@@ -11,45 +10,45 @@ const ActzCatalogo = () => {
   const areaRef = useRef();
   const cursoRef = useRef();
   const costoRef = useRef();
-  const modalidadRef = useRef();
+//  const modalidadRef = useRef();
   
 
-  const handlerClick = () => {
+//   const handlerClick = () => {
 
-    const  cursos =
-      {
+//     const  cursos =
+//       {
        
-        area: areaRef.current.value,
-        curso: cursoRef.current.defaultValue,
-        costo: costoRef.current.value,
-        modalidad: modalidadRef.current.value,
+//         area: areaRef.current.value,
+//         curso: cursoRef.current.defaultValue,
+//         costo: costoRef.current.value,
+//         modalidad: modalidadRef.current.value,
         
-      }
+//       }
       
       
-    store.collection("cursos").doc().set({
+//     store.collection("cursos").doc().set({
         
-    area: areaRef.current.value,
-    curso: cursoRef.current.defaultValue,
-    costo: costoRef.current.value,
-    modalidad: modalidadRef.current.value,
+//     area: areaRef.current.value,
+//     curso: cursoRef.current.defaultValue,
+//     costo: costoRef.current.value,
+//     modalidad: modalidadRef.current.value,
         
-    })
-    .then(() => {
-        alert("Curso cargado con exito!");
-    })
-    .catch((error) => {
-        alert("Error cargar: ", error);
-    });
+//     })
+//     .then(() => {
+//         alert("Curso cargado con exito!");
+//     })
+//     .catch((error) => {
+//         alert("Error cargar: ", error);
+//     });
 
       
       
-      areaRef.current.value = "";
-      cursoRef.current.value = "";
-      costoRef.current.value = "";
-      modalidadRef.current.value = "";
+//       areaRef.current.value = "";
+//       cursoRef.current.value = "";
+//       costoRef.current.value = "";
+//       modalidadRef.current.value = "";
       
-};
+// };
   return (
     <section className='actz-cur' >
       <div className='contenedor'>
