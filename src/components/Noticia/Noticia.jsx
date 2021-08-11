@@ -21,7 +21,7 @@ export const Noticia = ({noticia})=>{
         <div className="caja2">
 
         
-        <div className="img-not">
+        <div>
           <img className="img-not" src={image} alt='noticia' />
         </div>
         </div>
