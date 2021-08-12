@@ -7,7 +7,7 @@ import Galeria from "./components/Galeria/Galeria.jsx"
 import Inscribete from "./components/Inscribete/Inscribete.jsx"
 import CrearNoticia from "./components/Menu/CrearNoticia.jsx"
 import Container from "./components/Container/Container.jsx"
-/*import NeoContacto from "./components/NeoContacto/NeoContacto.jsx"*/
+import Contacto from "./components/Contacto/Contacto.jsx"
 import CursoDiplo from "./components/CursoDiplo/CursoDiplo.jsx"
 /*import Login from "./components/Menu/Login.jsx"*/
 /*import ActzCatalogo from "./components/Menu/ActzCatalogo.jsx"*/
@@ -19,4 +19,4 @@ import "./firebase/firebase"
 
 const divRoot = document.querySelector("#root");
 
-ReactDOM.render([<Header />,<Impulsa />, <Ofrecemos />, <CursoDiplo/>, <Galeria />, <Container />, <Inscribete />, <CrearNoticia />], divRoot)
+ReactDOM.render([<Header />,<Impulsa />, <Ofrecemos />, <CursoDiplo/>, <Galeria />, <Container />, <Inscribete />, <Contacto />, <CrearNoticia />], divRoot)

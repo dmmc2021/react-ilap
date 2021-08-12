@@ -8,9 +8,6 @@ function Header(){
    
     <header className="hero">
         <div className="textos-hero">
-            <nav>
-               
-            </nav>
             <img src="img/ilap-logo.png" alt="logo"></img>
             <h1>Instituto Latinoamericano de Actualización Profesional</h1>
             <p><span>Excelencia</span> en enseñanza y aprendizaje</p>

@@ -12,19 +12,31 @@ html{
     /*scroll-behavior: smooth;*/
 }
 
+/*MMMMMMMM BARRA DE NAVEGACION SUPERIOR MMMMMMMM*/
+/*.menu-list li a {
+    color: #060a24;
+    line-height: 28px;
+}
+.menu-list li a {
+    padding-left: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    color: #060a24;
+}
+
 .anclas{
     display: flex;
     justify-content: space-between;
-}
+}*/
 
-.anclas > li{
-    list-style: none;
-    text-decoration: none;
-}
+/*MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM*/
 
-nav{
-    margin-top: 0;
-}
+
 
 .hero{
     background-image: linear-gradient(to top, rgba(59, 66, 196, 0.623) 0%, rgba(169, 129, 187, 0.466) 49%, #a09690 100%), url("../img/fondo_prin.jpg");
@@ -105,9 +117,7 @@ nav{
     margin-bottom: 30px;
 }
 
-.contenedor .redux{
-    width: 400px;
-}
+
 
 .titulo.left{
     text-align: left;
@@ -408,6 +418,7 @@ nav{
 
  .body-not{
      padding-left: 30px;
+     padding-right: 25px;
  }
 
  .fmt-fecha{
@@ -630,12 +641,23 @@ input[type="submit"]:hover{
  /*FOOTER -CONTACTO*/
 
  footer{
-     background: #679ae7 ;
+    background: linear-gradient(0deg, rgba(217,217,217,1) 0%, rgba(230,230,230,1) 35%, rgba(246,246,246,1) 100%);
  }
 
  #contacto h2{
-     color: white;
+     color: #2c303b;
      font-weight: 500;
+ }
+
+ .reductor{
+     width: 60%;
+     margin: 0 auto;
+ }
+
+ .btnContacto{
+     margin: 0 auto;
+     display: flex;
+     justify-content: center;
  }
 
  /*.form{
@@ -902,6 +924,7 @@ select > option{
 .contenedorN{
     background: #ecdaca;
     width: 800px;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 25px;
@@ -910,7 +933,7 @@ select > option{
 }
 
 
-/*RESPONSIVE*/
+/*MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM*RESPONSIVE*MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM*/
 
 @media screen and (max-width:600px){
     .textos-hero{
@@ -1002,12 +1025,17 @@ select > option{
         max-width: 300px;
         max-height: 500px;
         padding: 30px 30px 30px 10px;
+        margin: 0 auto;
         
     }
    
     .title-not{
         padding-left: 30px;
         padding-top: 30px;
+    }
+
+    .title-not > h2{
+        text-align: center;
     }
    
     .body-not{
@@ -1073,6 +1101,10 @@ select > option{
     margin-right: auto;
     border-radius: 30px;
 } 
+
+.lista-dip{
+    padding-bottom: 50px;
+}
    
     #form-p{
         display: none;

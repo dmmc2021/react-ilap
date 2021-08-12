@@ -38,17 +38,6 @@ function Contacto(){
       console.log(JSON.stringify(contacto,null,2))
 
 
-   
-   
-    /*tlfRef.onkeyup = function(e) {
-      var nums_v = this.value.match(/\d+/g);
-        if (nums_v != null) {
-          this.value = '+'+((nums_v).toString().replace(/,/, ''));
-        } else {
-          this.value = itemPaisRef.value;
-        }
-    }*/
-
       nombreRef.current.value= "";
       emailRef.current.value= "";
       itemPaisRef.current.value= "";
@@ -58,22 +47,24 @@ function Contacto(){
   };
     return(
         <footer id="contacto">
-        <div className="contenedor redux">
+        
+        <div className="contenedor">
+          <div className="reductor">
             <h2 className="titulo">Contáctanos</h2>
             <Form>
               <Form.Group className='mb-3' controlId='formGroupNombre'>
                 <Form.Label style={{ color: "#000000" }}>Nombre</Form.Label>
-                <Form.Control type='text' placeholder='Ingrese nombre completo' ref={nombreRef} style={{ width: "100%" }} />
+                <Form.Control type='text' placeholder='Ingrese nombre completo' ref={nombreRef} style={{ width: "100%", height:"50px"}} />
               </Form.Group>
               <Form.Group className='mb-3' controlId='formGroupEmail'>
                 <Form.Label style={{ color: "#000000" }}>Email</Form.Label>
-                <Form.Control type="email" placeholder='Ingrese email Ejemplo abc@xyz.xx' ref={emailRef} style={{ width: "100%" }} />
+                <Form.Control type="email" placeholder='Ingrese email Ejemplo abc@xyz.xx' ref={emailRef} style={{ width: "100%", height:"50px" }} />
               </Form.Group>
               <Row className="mb-3">
-                <Form.Group as={Col} controlId="formGrroupCodigo" xs={2} md={2}>
-                  <Form.Label style={{ color: "#000000" }}>Código de area</Form.Label>
-                  <Form.Select aria-label="Default select example" ref={itemPaisRef} onChange={()=>handlerOnChange()} >
-                    <option value="">Pais</option>
+                <Form.Group as={Col} controlId="formGrroupCodigo" md={4}>
+                  <Form.Label style={{ color: "#000000", width:"250px !important", display:"inline"}}>Código de area</Form.Label>
+                  <Form.Select aria-label="Default select example" style={{ height:"50px", position:"relative", marginTop:"8px" }} ref={itemPaisRef} onChange={()=>handlerOnChange()} >
+                    <option value="">País</option>
                     <option value="+58" className="ven">Venezuela</option>
                     <option value="+57">Colombia</option>
                     <option value="+1">Panamá</option>
@@ -109,12 +100,13 @@ function Contacto(){
                 </Form.Group>
                 <Form.Group as={Col} controlId='formGroupTlf'>
                   <Form.Label style={{ color: "#000000" }}>Teléfono</Form.Label>
-                  <Form.Control  type='text' placeholder='Ingrese teléfono. Ejemplo 1234567' ref={tlfRef} style={{ width: "100%" }} />
+                  <Form.Control  type='text' placeholder='Ingrese teléfono. Ejemplo 1234567' ref={tlfRef} style={{ width: "100%", height:"50px" }} />
                 </Form.Group>
-              </Row>  
+              </Row> 
+              <Row className="mb-3"> 
               <Form.Group className='mb-3' controlId='formGroupCursos'>
                 <Form.Label style={{ color: "#000000" }}>Cursos</Form.Label>
-                <Form.Select aria-label="Default select example" ref={itemCursoRef} style={{ width: "100%" }} >
+                <Form.Select aria-label="Default select example" ref={itemCursoRef} style={{ width: "100%", height:"50px" }} >
                   <option value="">Seleccione un curso</option>
                   <option value="C001">Certificacion en gestion integral de credito</option>
                   <option value="C002">Contabilidad</option>
@@ -127,9 +119,11 @@ function Contacto(){
                   <option value="C009">Legal</option>
                 </Form.Select>
               </Form.Group>
+              </Row>
+              <Row className="mb-3">
               <Form.Group className='mb-3' controlId='formGroupDiplomado'>
                 <Form.Label style={{ color: "#000000" }}>Diplomados</Form.Label>
-                <Form.Select aria-label="Default select example" ref={itemDiplomadoRef} style={{ width: "100%" }} >
+                <Form.Select aria-label="Default select example" ref={itemDiplomadoRef} style={{ width: "100%", height:"50px" }} >
                   <option value="">Seleccione un diplomado</option>
                   <option value="D001">Certificacion en gestion de credito</option>
                   <option value="D002">Finanzas cuantitativas</option>
@@ -141,10 +135,14 @@ function Contacto(){
                   <option value="D008">Instituciones financieras</option>
                 </Form.Select>
               </Form.Group>
+              </Row>
             </Form>
+            <div className="btnContacto">
             <Button variant='primary' onClick={() => handlerClick()}>
             Enviar
-            </Button> 
+            </Button>
+            </div>
+            </div> 
         </div>
         </footer>
     )
