@@ -50,7 +50,7 @@ function Contacto(){
         
         <div className="contenedor">
           <div className="reductor">
-            <h2 className="titulo">Contáctanos</h2>
+            <h2 className="titulo" id="contacto-id">Contáctanos</h2>
             <Form>
               <Form.Group className='mb-3' controlId='formGroupNombre'>
                 <Form.Label style={{ color: "#000000" }}>Nombre</Form.Label>
@@ -60,7 +60,7 @@ function Contacto(){
                 <Form.Label style={{ color: "#000000" }}>Email</Form.Label>
                 <Form.Control type="email" placeholder='Ingrese email Ejemplo abc@xyz.xx' ref={emailRef} style={{ width: "100%", height:"50px" }} />
               </Form.Group>
-              <Row className="mb-3">
+              <Row className="mb-4">
                 <Form.Group as={Col} controlId="formGrroupCodigo" md={4}>
                   <Form.Label style={{ color: "#000000", width:"250px !important", display:"inline"}}>Código de area</Form.Label>
                   <Form.Select aria-label="Default select example" style={{ height:"50px", position:"relative", marginTop:"8px" }} ref={itemPaisRef} onChange={()=>handlerOnChange()} >
@@ -71,28 +71,24 @@ function Contacto(){
                     <option value="+49">U.S.A.</option>
                     <option value="+54">Argentina</option>
                     <option value="+297">Aruba</option>
-                    <option value="+61">Australia</option>
                     <option value="+591">Bolivia</option>
                     <option value="+55">Brasil</option>
                     <option value="+1">Canada</option>
                     <option value="+56">Chile</option>
-                    <option value="+86">China</option>
                     <option value="+506">Costa Rica</option>
                     <option value="+53">Cuba</option>
                     <option value="+599">Curazao</option>
                     <option value="+593">Ecuador</option>
-                    <option value="+34">España</option>
                     <option value="+503">El Salvador</option>
-                    <option value="+33">Francia</option>
                     <option value="+502">Guatemala</option>
                     <option value="+509">Haiti</option>
                     <option value="+504">Honduras</option>
-                    <option value="+39">Italia</option>
                     <option value="+1">Jamaica</option>
                     <option value="+52">Mexico</option>
                     <option value="+505">Nicaragua</option>
                     <option value="+595">Paraguay</option>
                     <option value="+51">Peru</option>
+                    <option value="+1-787">Puerto Rico</option>
                     <option value="+1-809">Rep. Dominicana</option>
                     <option value="+55">Uruguay</option>
                     <option value="+">Otros</option>

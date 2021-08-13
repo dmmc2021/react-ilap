@@ -1,12 +1,17 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
+import BarNav from "../BarNav/BarNav";
+
 
 
 function Header(){
     return(
-        
+     <>   
+     
    
     <header className="hero">
+        <BarNav  />
+        
         <div className="textos-hero">
             <img src="img/ilap-logo.png" alt="logo"></img>
             <h1>Instituto Latinoamericano de Actualización Profesional</h1>
@@ -24,6 +29,8 @@ function Header(){
         </div>
         
     </header>
+
+    </>
     
         
     )

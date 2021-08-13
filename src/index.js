@@ -10,7 +10,8 @@ import Container from "./components/Container/Container.jsx"
 import Contacto from "./components/Contacto/Contacto.jsx"
 import CursoDiplo from "./components/CursoDiplo/CursoDiplo.jsx"
 /*import Login from "./components/Menu/Login.jsx"*/
-/*import ActzCatalogo from "./components/Menu/ActzCatalogo.jsx"*/
+import ActzCatalogo from "./components/VerCatalogo/ActzCatalogo.jsx"
+import ContainerCat from "./components/VerCatalogo/ContainerCat"
 
 import "./css/estilo.css";
 import './css/bootstrap.min.css';

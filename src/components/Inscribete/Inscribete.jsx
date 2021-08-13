@@ -6,7 +6,7 @@ import React from "react";
 function Inscribete(){
     return(
         <section className="info-last">
-            <div className="contenedor last-section">
+            <div className="contenedor last-section" id="inscribete-id">
                 <div className="contenedor-textos-main">
                     <h2 className="titulo left">Elige lo mejor para tu futuro!</h2>
                     <p className="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ullam aliquam perspiciatis, dolore quaerat odio laudantium adipisci laboriosam libero quis voluptas cupiditate exercitationem soluta distinctio magnam dignissimos. Aspernatur, veniam aperiam.</p>

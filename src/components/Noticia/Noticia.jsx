@@ -3,7 +3,7 @@ import React from "react"
 export const Noticia = ({noticia})=>{
   const { titulo, autor, contenido, fecha, image} = noticia
   return ( 
-    <div className="caja-not">
+    <div className="caja-not" id="noticia-id">
     <div className="caja1">
       <div className="title-not">
         <h2 className='titulo left'>{titulo}</h2>

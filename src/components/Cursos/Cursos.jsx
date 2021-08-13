@@ -5,7 +5,7 @@ function Cursos(){
 return(
 
 
-<div className="contenedor-cursos">
+<div className="contenedor-cursos" id="cursos-id">
 
 <h3>CURSOS</h3>
 <Accordion>
