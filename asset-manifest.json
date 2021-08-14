@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/react-ilap/static/css/main.7dbfe940.chunk.css",
-    "main.js": "/react-ilap/static/js/main.c4efa492.chunk.js",
-    "main.js.map": "/react-ilap/static/js/main.c4efa492.chunk.js.map",
+    "main.css": "/react-ilap/static/css/main.537e972b.chunk.css",
+    "main.js": "/react-ilap/static/js/main.4629fae4.chunk.js",
+    "main.js.map": "/react-ilap/static/js/main.4629fae4.chunk.js.map",
     "runtime-main.js": "/react-ilap/static/js/runtime-main.3556e76d.js",
     "runtime-main.js.map": "/react-ilap/static/js/runtime-main.3556e76d.js.map",
-    "static/js/2.2cbdbaef.chunk.js": "/react-ilap/static/js/2.2cbdbaef.chunk.js",
-    "static/js/2.2cbdbaef.chunk.js.map": "/react-ilap/static/js/2.2cbdbaef.chunk.js.map",
+    "static/js/2.4c334ede.chunk.js": "/react-ilap/static/js/2.4c334ede.chunk.js",
+    "static/js/2.4c334ede.chunk.js.map": "/react-ilap/static/js/2.4c334ede.chunk.js.map",
     "index.html": "/react-ilap/index.html",
-    "static/css/main.7dbfe940.chunk.css.map": "/react-ilap/static/css/main.7dbfe940.chunk.css.map",
-    "static/js/2.2cbdbaef.chunk.js.LICENSE.txt": "/react-ilap/static/js/2.2cbdbaef.chunk.js.LICENSE.txt",
+    "static/css/main.537e972b.chunk.css.map": "/react-ilap/static/css/main.537e972b.chunk.css.map",
+    "static/js/2.4c334ede.chunk.js.LICENSE.txt": "/react-ilap/static/js/2.4c334ede.chunk.js.LICENSE.txt",
     "static/media/estilo.css": "/react-ilap/static/media/fondo_prin.8ec5241b.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.3556e76d.js",
-    "static/js/2.2cbdbaef.chunk.js",
-    "static/css/main.7dbfe940.chunk.css",
-    "static/js/main.c4efa492.chunk.js"
+    "static/js/2.4c334ede.chunk.js",
+    "static/css/main.537e972b.chunk.css",
+    "static/js/main.4629fae4.chunk.js"
   ]
 }
