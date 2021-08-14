@@ -649,6 +649,10 @@ input[type="submit"]:hover{
      font-weight: 500;
  }
 
+ .resp-cont{
+     row-gap: 45px;
+ }
+
  .reductor{
      width: 60%;
      margin: 0 auto;
@@ -945,9 +949,9 @@ select > option{
 }
 
 .btn-not{
-    margin: 0 auto;
     display: flex;
     justify-content: center;
+    padding: 0 0 40px 0;
 }
 
 /*mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm BARRA DE NAVEGACION mmmmmmmmmmmmmmmmm*/
@@ -992,6 +996,10 @@ select > option{
     .textos-hero{
         text-align: center;
         font-size: 30px;
+    }
+
+    .wave-contenedor{
+        width: 100%;
     }
 
     .titulo{
@@ -1105,13 +1113,17 @@ select > option{
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
-    background-color: #c6cfdb;
-    border-radius: 20px;
+    
+
     margin-top: 70px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid  rgb(102, 96, 96);
-} 
+
+}
+
+.reductor{
+    width: 100%;
+}
 
 .container-1p,
 .container-2p,
@@ -1377,13 +1389,13 @@ select > option{
     } 
 
     .contenedorN{
-        background: #ecdaca;
+        
         width: 100%;
         margin-left: auto;
         margin-right: auto;
         border-radius: 25px;
         margin-bottom: 50px;
-        border: 1px solid  rgb(102, 96, 96);
+        
     }
     
 }

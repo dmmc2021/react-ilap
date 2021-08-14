@@ -14,15 +14,16 @@ function Contacto(){
   const tlfRef= useRef();
   const itemPaisRef= useRef();
   const itemCursoRef= useRef();
-  const itemDiplomadoRef= useRef();
-  const handlerOnChange=()=> {
+ 
+  
+  /*const handlerOnChange=()=> {
     tlfRef.value = this.value;
     if((this.value).trim() !== '') {
       tlfRef.disabled = false;
     } else {
       tlfRef.disabled = true
     }
-  }
+  }*/
   const handlerClick = () => {
 
   const contacto =
@@ -33,7 +34,7 @@ function Contacto(){
         codigoArea: itemPaisRef.current.value,
         telefono: tlfRef.current.value,
         curso: itemCursoRef.current.value,
-        diplomado: itemDiplomadoRef.current.value,
+        
       }]
       console.log(JSON.stringify(contacto,null,2))
 
@@ -43,7 +44,7 @@ function Contacto(){
       itemPaisRef.current.value= "";
       tlfRef.current.value= "";
       itemCursoRef.current.value= "";
-      itemDiplomadoRef.current.value= "";
+      
   };
     return(
         <footer id="contacto">
@@ -60,37 +61,37 @@ function Contacto(){
                 <Form.Label style={{ color: "#000000" }}>Email</Form.Label>
                 <Form.Control type="email" placeholder='Ingrese email Ejemplo abc@xyz.xx' ref={emailRef} style={{ width: "100%", height:"50px" }} />
               </Form.Group>
-              <Row className="mb-4">
+              <Row className="mb-4 resp-cont">
                 <Form.Group as={Col} controlId="formGrroupCodigo" md={4}>
                   <Form.Label style={{ color: "#000000", width:"250px !important", display:"inline"}}>Código de area</Form.Label>
-                  <Form.Select aria-label="Default select example" style={{ height:"50px", position:"relative", marginTop:"8px" }} ref={itemPaisRef} onChange={()=>handlerOnChange()} >
+                  <Form.Select aria-label="Default select example" style={{ height:"50px", position:"relative", marginTop:"8px" }} ref={itemPaisRef} /*onChange={()=>handlerOnChange()}*/ >
                     <option value="">País</option>
                     <option value="+58" className="ven">Venezuela</option>
-                    <option value="+57">Colombia</option>
-                    <option value="+1">Panamá</option>
-                    <option value="+49">U.S.A.</option>
-                    <option value="+54">Argentina</option>
-                    <option value="+297">Aruba</option>
-                    <option value="+591">Bolivia</option>
-                    <option value="+55">Brasil</option>
-                    <option value="+1">Canada</option>
-                    <option value="+56">Chile</option>
-                    <option value="+506">Costa Rica</option>
-                    <option value="+53">Cuba</option>
-                    <option value="+599">Curazao</option>
-                    <option value="+593">Ecuador</option>
-                    <option value="+503">El Salvador</option>
-                    <option value="+502">Guatemala</option>
-                    <option value="+509">Haiti</option>
-                    <option value="+504">Honduras</option>
-                    <option value="+1">Jamaica</option>
-                    <option value="+52">Mexico</option>
-                    <option value="+505">Nicaragua</option>
-                    <option value="+595">Paraguay</option>
-                    <option value="+51">Peru</option>
-                    <option value="+1-787">Puerto Rico</option>
-                    <option value="+1-809">Rep. Dominicana</option>
-                    <option value="+55">Uruguay</option>
+                    <option value="+57">Colombia (+57)</option>
+                    <option value="+507">Panamá (+507)</option>
+                    <option value="+1">U.S.A. (+1)</option>
+                    <option value="+54">Argentina (+54)</option>
+                    <option value="+297">Aruba (+297)</option>
+                    <option value="+591">Bolivia (+591)</option>
+                    <option value="+55">Brasil (+55)</option>
+                    <option value="+1">Canada (+1)</option>
+                    <option value="+56">Chile (+56)</option>
+                    <option value="+506">Costa Rica (+506)</option>
+                    <option value="+53">Cuba (+53)</option>
+                    <option value="+599">Curazao (+599)</option>
+                    <option value="+593">Ecuador (+593)</option>
+                    <option value="+503">El Salvador (+503)</option>
+                    <option value="+502">Guatemala (+502)</option>
+                    <option value="+509">Haiti (+509)</option>
+                    <option value="+504">Honduras (+504)</option>
+                    <option value="+1-876">Jamaica (+1-876)</option>
+                    <option value="+52">Mexico (+52)</option>
+                    <option value="+505">Nicaragua (+505)</option>
+                    <option value="+595">Paraguay (+595)</option>
+                    <option value="+51">Peru (+51)</option>
+                    <option value="+1-787">Puerto Rico (+1-787)</option>
+                    <option value="+1-809">Rep. Dominicana (+1-809)</option>
+                    <option value="+55">Uruguay (+55)</option>
                     <option value="+">Otros</option>
                   </Form.Select>
                 </Form.Group>
@@ -113,22 +114,6 @@ function Contacto(){
                   <option value="C007">Informatica</option>
                   <option value="C008">Seguridad y salud laboral</option>
                   <option value="C009">Legal</option>
-                </Form.Select>
-              </Form.Group>
-              </Row>
-              <Row className="mb-3">
-              <Form.Group className='mb-3' controlId='formGroupDiplomado'>
-                <Form.Label style={{ color: "#000000" }}>Diplomados</Form.Label>
-                <Form.Select aria-label="Default select example" ref={itemDiplomadoRef} style={{ width: "100%", height:"50px" }} >
-                  <option value="">Seleccione un diplomado</option>
-                  <option value="D001">Certificacion en gestion de credito</option>
-                  <option value="D002">Finanzas cuantitativas</option>
-                  <option value="D003">Gerencia bancaria</option>
-                  <option value="D004">Gerencia integral de credito</option>
-                  <option value="D005">Gestion del presupuesto publico</option>
-                  <option value="D006">Gestion integral del talento humano</option>
-                  <option value="D007">Gestion de riesgo en instituciones financieras</option>
-                  <option value="D008">Instituciones financieras</option>
                 </Form.Select>
               </Form.Group>
               </Row>

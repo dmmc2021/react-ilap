@@ -1,81 +1,203 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
+import { v4 as uuidv4 } from "uuid";
+import { useRef } from "react";
+import { Col, Form , Row, } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
 
 
-function Pago(){
+
+
+
+
+const Pago=()=>{
+  const nombreRef= useRef();
+  const emailRef= useRef();
+  const itemPaisRef= useRef();
+  const tlfRef= useRef();
+  const itemBancoDestinoRef= useRef();
+  const itemCursoRef= useRef();
+  const bancOrigen1Ref= useRef();
+  const bancOrigen2Ref= useRef();
+  const fechaPagoRef= useRef();
+  const idDepositoRef= useRef();
+  const montoRef= useRef();
+ 
+ 
+  
+  /*const handlerOnChange=()=> {
+    tlfRef.value = this.value;
+    if((this.value).trim() !== '') {
+      tlfRef.disabled = false;
+    } else {
+      tlfRef.disabled = true
+    }
+  }*/
+  const handlerChange=()=>{
+    console.log(`CONO`, bancOrigen1Ref.current.value)
+  }
+  const handlerClick = () => {
+
+  const pago =
+      [{
+        id: uuidv4,
+        nombre: nombreRef.current.value,
+        email: emailRef.current.value,
+        codigoArea: itemPaisRef.current.value,
+        bancoDestino: itemBancoDestinoRef.current.value,
+        telefono: tlfRef.current.value,
+        curso: itemCursoRef.current.value,
+        bancOrigen:"loquequieras",
+        fechaPago: fechaPagoRef.current.value,
+        idDeposito: idDepositoRef.current.value,
+        monto: montoRef.current.value,
+        
+      }]
+      console.log(JSON.stringify(pago,null,2))
+
+
+      nombreRef.current.value= "";
+      emailRef.current.value= "";
+      itemPaisRef.current.value="";
+      itemBancoDestinoRef.current.value= "";
+      tlfRef.current.value= "";
+      itemCursoRef.current.value= "";
+      bancOrigen1Ref.current.value="";
+      
+      fechaPagoRef.current.value="";
+      idDepositoRef.current.value="";
+      montoRef.current.value="";
+      
+  };
     return(
-        <section className="pago" id="form-p">
-                <div className="contenedorp">
+        <footer id="contacto">
         
-                    <form action="" className="form">
-                        <div className="container-genp">
-                            <h2 className="titulop">Notificación de pago</h2>
-                            
-                            <div className="container-1p">
-                                <input className="inputp nombrep" type="text" placeholder="Nombre"></input>
-                                <input className="inputp emailp" type="email" placeholder="Email"></input>
-                            </div>
-                            <div className="container-2p">
-                               
-                                
-                                <label className="cursop" for="curso">Selección de Curso</label>
-                                
-                                <select className="inputp">
-                                    <option value="">Certificacion en gestion integral de credito</option>
-                                    <option value="">Contabilidad</option>
-                                    <option value="">Desarrollo personal - Laboral</option>
-                                    <option value="">Desarollo Supervisorio</option>
-                                    <option value="">Finanzas</option>
-                                    <option value="">Gestion integral del talento humano</option>
-                                    <option value="">Informatica</option>
-                                    <option value="">Seguridad y salud laboral</option>
-                                    <option value="">Legal</option>
-                                </select>
-            
-                                <label className="diplomadop" for="diplomado">Seleccion de Diplomado</label>
-                                
-                                <select  className="inputp" id="diplomado">
-                                    <option value="">Certificacion en gestion de credito</option>
-                                    <option value="">Finanzas cuantitativas</option>
-                                    <option value="">Gerencia bancaria</option>
-                                    <option value="">Gerencia integral de credito</option>
-                                    <option value="">Gestion del presupuesto publico</option>
-                                    <option value="">Gestion integral del talento humano</option>
-                                    <option value="">Gestion de riesgo en instituciones financieras</option>
-                                    <option value="">Instituciones financieras</option>
-                                </select>
-                                
-                            </div>
-                                <label  for="banco" className="banc">Banco</label>
-                            
-                            <div className="container-3p">
-                                <div className="b1">
-                                <select className="inputp banco">
-                                    <option value="">Banesco</option>
-                                    <option value="">Mercantil</option>
-                                    <option value="">Venezuela</option>
-                                    <option value="">B.O.D.</option>
-                                    <option value="">Bicentenario</option>
-                                    <option value="">Banco Nacional de Credito</option>
-                                   </select>
-                                </div>
+        <div className="contenedor">
+          <div className="reductor">
+            <h2 className="titulo" id="contacto-id">Notificación de Pago</h2>
+            <Form>
+              <Form.Group className='mb-3' controlId='formGroupEmail'>
+                <Form.Label style={{ color: "#000000" }}>Email</Form.Label>
+                <Form.Control type='text' placeholder='Ingrese nombre completo' ref={nombreRef} style={{ width: "100%", height:"50px"}} />
+              </Form.Group>
+              <Form.Group className='mb-3' controlId='formGroupNombre'>
+                <Form.Label style={{ color: "#000000" }}>Nombre</Form.Label>
+                <Form.Control type="email" placeholder='Ingrese email Ejemplo abc@xyz.xx' ref={emailRef} style={{ width: "100%", height:"50px" }} />
+              </Form.Group>
+              <Row className="mb-4">
+                <Form.Group as={Col} controlId="formGrroupCodigo" md={4}>
+                  <Form.Label style={{ color: "#000000", width:"250px !important", display:"inline"}}>Código de area</Form.Label>
+                  <Form.Select aria-label="Default select example" style={{ height:"50px", position:"relative", marginTop:"8px" }} ref={itemPaisRef} /*onChange={()=>handlerOnChange()}*/ >
+                    <option value="">País</option>
+                    <option value="+58" className="ven">Venezuela</option>
+                    <option value="+57">Colombia (+57)</option>
+                    <option value="+507">Panamá (+507)</option>
+                    <option value="+1">U.S.A. (+1)</option>
+                    <option value="+54">Argentina (+54)</option>
+                    <option value="+297">Aruba (+297)</option>
+                    <option value="+591">Bolivia (+591)</option>
+                    <option value="+55">Brasil (+55)</option>
+                    <option value="+1">Canada (+1)</option>
+                    <option value="+56">Chile (+56)</option>
+                    <option value="+506">Costa Rica (+506)</option>
+                    <option value="+53">Cuba (+53)</option>
+                    <option value="+599">Curazao (+599)</option>
+                    <option value="+593">Ecuador (+593)</option>
+                    <option value="+503">El Salvador (+503)</option>
+                    <option value="+502">Guatemala (+502)</option>
+                    <option value="+509">Haiti (+509)</option>
+                    <option value="+504">Honduras (+504)</option>
+                    <option value="+1-876">Jamaica (+1-876)</option>
+                    <option value="+52">Mexico (+52)</option>
+                    <option value="+505">Nicaragua (+505)</option>
+                    <option value="+595">Paraguay (+595)</option>
+                    <option value="+51">Peru (+51)</option>
+                    <option value="+1-787">Puerto Rico (+1-787)</option>
+                    <option value="+1-809">Rep. Dominicana (+1-809)</option>
+                    <option value="+55">Uruguay (+55)</option>
+                    <option value="+">Otros</option>
+                  </Form.Select>
+                </Form.Group>
+                <Form.Group as={Col} controlId='formGroupTlf'>
+                  <Form.Label style={{ color: "#000000" }}>Teléfono</Form.Label>
+                  <Form.Control  type='text' placeholder='Ingrese teléfono. Ejemplo 1234567' ref={tlfRef} style={{ width: "100%", height:"50px" }} />
+                </Form.Group>
+              </Row> 
+              <Row className="mb-3"> 
+              <Form.Group className='mb-3' controlId='formGroupCursos'>
+                <Form.Label style={{ color: "#000000" }}>Cursos</Form.Label>
+                <Form.Select aria-label="Default select example" ref={itemCursoRef} style={{ width: "100%", height:"50px" }} >
+                  <option value="">Seleccione un curso</option>
+                  <option value="C001">Certificacion en gestion integral de credito</option>
+                  <option value="C002">Contabilidad</option>
+                  <option value="C003">Desarrollo personal - Laboral</option>
+                  <option value="C004">Desarollo Supervisorio</option>
+                  <option value="C005">Finanzas</option>
+                  <option value="C006">Gestion integral del talento humano</option>
+                  <option value="C007">Informatica</option>
+                  <option value="C008">Seguridad y salud laboral</option>
+                  <option value="C009">Legal</option>
+                </Form.Select>
+              </Form.Group>
+              </Row>
+              <Form.Group as={Col} controlId="formGroupBancos">
+                  <Form.Label style={{ color: "#000000", width:"250px !important", display:"inline"}}>Banco destino</Form.Label>
+                  <Form.Select aria-label="Default select example" style={{ height:"50px", position:"relative", marginTop:"8px" }} ref={itemBancoDestinoRef} /*onChange={()=>handlerOnChange()}*/ >
+                    <option value="">Seleccione Banco destino</option>
+                    <option value="Banesco" >Banesco</option>
+                    <option value="">B.O.D.</option>
+                    <option value="">Jp Morgan Chase</option>
+                 </Form.Select>
+                </Form.Group>
+                <Form.Label style={{ color: "#000000" }}>Banco origen</Form.Label>
+                <Row>
+                  
+                    
+                        <Form.Check
+                          inline
+                          label="Mismo Banco"
+                          name="group1"
+                          value="mismo"
+                          ref={bancOrigen1Ref}
+                          type="radio"
+                          id={`inline-1`}
+                          OnChange={()=>{handlerChange()}}
+                        />
+                        <Form.Check
+                          inline
+                          label="Otro Banco"
+                          name="group1"
+                         value="otro"
+                          ref={bancOrigen1Ref}
+                          type="radio"
+                          id={`inline-2`}
+                          OnChange={()=>{handlerChange()}}
+                          />
 
-                                <div className="b2">
-                                    <input className="inputp mont" type="number" placeholder="Monto"></input>
-                                
-                                    <input className="inputp ref" type="number" placeholder="Referencia"></input>
-                                </div>
-                            </div>
-                                 <div className="container-4p">
-                                 <input type="submit" className="cta" />
-                               </div> 
-                            </div>
-                    </form>
-                </div>
-            </section>
-   
-    
-        
+                      
+                          
+                </Row>
+                  <Form.Group className='mb-3' controlId='formGroupFecha'>
+                    <Form.Label style={{ color: "#000000" }}>Fecha</Form.Label>
+                    <Form.Control type='date' placeholder='Ingrese nombre completo' ref={fechaPagoRef} style={{ width: "100%", height:"50px"}} />
+                  </Form.Group>
+                  <Form.Group className='mb-3' controlId='formGroupDeposito'>
+                    <Form.Label style={{ color: "#000000" }}>id deposito</Form.Label>
+                    <Form.Control type='text' placeholder='Ingrese nombre completo' ref={idDepositoRef} style={{ width: "100%", height:"50px"}} />
+                  </Form.Group>
+                  <Form.Group className='mb-3' controlId='formGroupMonto'>
+                    <Form.Label style={{ color: "#000000" }}>Monto</Form.Label>
+                    <Form.Control type='text' placeholder='Ingrese nombre completo' ref={montoRef} style={{ width: "100%", height:"50px"}} />
+                  </Form.Group>
+
+            </Form>
+            <div className="btnContacto">
+            <Button variant='primary' onClick={() => handlerClick()}>
+            Enviar
+            </Button>
+            </div>
+          </div> 
+        </div>
+        </footer>
     )
 }
 
